@@ -15,7 +15,7 @@ export const Game = () => {
     const [board, setBoard] = useState(chess.board()); 
     const [started, setStarted] = useState(false);
     const [status, setStatus] = useState<string>("");
-    const [connecting, setConnecting] = useState(true);
+    const [_connecting, setConnecting] = useState(true);
     
     useEffect(() => {
         if(!socket) {
