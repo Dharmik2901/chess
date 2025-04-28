@@ -29,7 +29,7 @@ A real-time multiplayer chess application that allows users to play chess with o
 
 ```
 chess/
-├── backend/               # Backend WebSocket server
+├── backend1/               # Backend WebSocket server
 │   ├── src/
 │   │   ├── Game.ts        # Game class for chess logic
 │   │   ├── GameManager.ts # Manages active games and users
@@ -79,6 +79,8 @@ npm install
 ```
 
 ### Running the Application
+
+Open two Terminals One for 'backend1' and another for 'frontend'
 
 1. Start the backend server:
 ```bash
