@@ -34,4 +34,4 @@ wss.on('connection', function connection(ws) {
 wss.on('error', (error) => {
     console.error('WebSocket server error:', error);
 });
-console.log('WebSocket server started on port 8080');
+console.log(`WebSocket server started on port ${port}`);
