@@ -2,7 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const ws_1 = require("ws");
 const GameManager_1 = require("./GameManager");
-const wss = new ws_1.WebSocketServer({ port: 8080 });
+const port = Number(process.env.PORT) || 8080;
+const wss = new ws_1.WebSocketServer({ port });
 const gameManager = new GameManager_1.GameManager();
 wss.on('connection', function connection(ws) {
     console.log('New client connected');
@@ -33,4 +34,4 @@ wss.on('connection', function connection(ws) {
 wss.on('error', (error) => {
     console.error('WebSocket server error:', error);
 });
-console.log('WebSocket server started on port 8080');
+console.log(`WebSocket server started on port ${port}`);
