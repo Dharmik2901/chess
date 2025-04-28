@@ -68,7 +68,7 @@ cd chess
 
 2. Install backend dependencies:
 ```bash
-cd backend
+cd backend1
 npm install
 ```
 
@@ -82,7 +82,7 @@ npm install
 
 1. Start the backend server:
 ```bash
-cd backend
+cd backend1
 npx tsc
 node dist/index.js
 ```
