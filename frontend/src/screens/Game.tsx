@@ -55,7 +55,7 @@ export const Game = () => {
       <div className="h-screen flex items-center justify-center bg-gradient-to-br from-indigo-900 to-blue-900">
         <div className="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm shadow-xl">
           <div className="animate-pulse flex flex-col items-center">
-            <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mb-4"></div>
+            <div className="w-16 h-16 border-5 border-blue-500 border-t-transparent rounded-full animate-spin mb-4"></div>
             <p className="text-white text-xl font-medium">Connecting to server...</p>
           </div>
         </div>
